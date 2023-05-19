@@ -1,6 +1,6 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
-if true then return {} end
+-- if true then return {} end
 
 -- every spec file under config.plugins will be loaded automatically by lazy.nvim
 --
@@ -13,12 +13,12 @@ return {
   { "ellisonleao/gruvbox.nvim" },
 
   -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
+  -- {
+  --  "LazyVim/LazyVim",
+  --  opts = {
+  --    colorscheme = "nyoom",
+  --  },
+  -- },
 
   -- change trouble config
   {
@@ -142,6 +142,7 @@ return {
     opts = {
       ensure_installed = {
         "bash",
+        "elixir",
         "html",
         "javascript",
         "json",
@@ -151,6 +152,7 @@ return {
         "python",
         "query",
         "regex",
+        "rust",
         "tsx",
         "typescript",
         "vim",
